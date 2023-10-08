@@ -13,9 +13,10 @@ func Run() {
 		fmt.Println("1. Add Comic")
 		fmt.Println("2. Update Comic")
 		fmt.Println("3. Delete Comic")
-		fmt.Println("4. Show Comic")
-		fmt.Println("5. Exit")
-		fmt.Println("6. Back to Main Menu")
+		fmt.Println("4. Delete All Data")
+		fmt.Println("5. Show Comic")
+		fmt.Println("6. Exit")
+		fmt.Println("7. Back to Main Menu")
 		fmt.Println("=====================================")
 
 		var input int
@@ -30,11 +31,13 @@ func Run() {
 		case 3:
 			handler.Delete()
 		case 4:
-			handler.Read()
+			handler.DeleteAll()
 		case 5:
+			handler.Read()
+		case 6:
 			fmt.Println("Exit")
 			return
-		case 6:
+		case 7:
 			fmt.Println("Back to Main Menu")
 		default:
 			fmt.Println("Wrong input")
