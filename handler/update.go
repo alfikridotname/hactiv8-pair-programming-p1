@@ -22,7 +22,7 @@ func Update() {
 	}
 
 	if count == 0 {
-		fmt.Printf("Data dengan id %d tidak ditemukan", id)
+		fmt.Printf("Data dengan id %d tidak ditemukan\n", id)
 		return
 	}
 
